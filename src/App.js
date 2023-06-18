@@ -1,15 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import ListaHeroes from './Hero';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Ver el archivo <code>README.md</code> para ver la consigna
-        </p>
-      </header>
+    <div className='contenedor'>
+      <div className='titulo-contenedor'>
+        <p>Superhero App</p>
+      </div>
+      <div id='contenedor-lista-heroes'>
+        <ListaHeroes />
+      </div>
     </div>
   );
 }
